@@ -1,0 +1,66 @@
+@import "themes/mocha.css";
+
+* {
+    border-radius: 0;
+    font-family: Liberation Sans;
+    font-size: 10pt;
+    min-height: 0;
+    color: @text;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: @base;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @pink;
+}
+
+#workspaces {
+    background: @base;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+#workspaces button {
+    padding-left: 5px;
+    padding-right: 10px;
+    min-width: 0;
+    color: #f2f4f8;
+}
+
+#workspaces button.active {
+    color: @maroon;
+}
+
+#workspaces button.urgent {
+    color: @mauve;
+}
+
+#workspaces button:hover {
+    background: @base;
+    border-color: @base;
+    color: @pink;
+}
+
+.modules-right {
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.modules-right * {
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 6px;
+}
+
+#clock, #battery, #pulseaudio, #network, #workspaces {
+    padding: 0px 10px;
+    background: @base;
+}
